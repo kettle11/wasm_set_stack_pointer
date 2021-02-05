@@ -33,4 +33,4 @@ to place the library in this folder.
 This library may become less relevant when this lands in LLVM 12.0:
 [https://github.com/WebAssembly/binaryen/issues/2934](https://github.com/WebAssembly/binaryen/issues/2934)
 
-That flag may be used to make the force the stack pointer to be a WebAssembly global.
+That flag may be used to force LLVM to export the stack pointer as a WebAssembly global.

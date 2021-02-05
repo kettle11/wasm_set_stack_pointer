@@ -22,7 +22,7 @@ Add this crate to your cargo.toml and add `use::wasm_set_stack_pointer;` somewhe
 ## Building
 This library already has the WebAssembly generated so probably you don't need to do it yourself.
 
-But if you want to build it yourself for some reaosn you'll need `llvm-mc` installed. `llvm-mc` comes with `llvm` if you have llvm installed.
+But if you want to build it yourself for some reason you'll need `llvm-mc` installed. `llvm-mc` comes with `llvm` if you have llvm installed.
 
 Then run `llvm-mc -triple=wasm32-unknown-unknown -filetype=obj set_stack_pointer.s > libset_stack_pointer.a`
 
@@ -33,4 +33,4 @@ to place the library in this folder.
 This library may become less relevant when this lands in LLVM 12.0:
 [https://github.com/WebAssembly/binaryen/issues/2934](https://github.com/WebAssembly/binaryen/issues/2934)
 
-That flag may be used to make the force the stack pointer to be a WebAssembly global.
+That flag may be used to force LLVM to export the stack pointer as a WebAssembly global.

@@ -15,9 +15,9 @@ It is possible to allocate a new stack for each worker, but there's no good way 
 This library links a small snippet of raw WebAssembly that exports a global function ("set_stack_pointer") that can be used to set the stack pointer.
 
 ## Usage
-Add this crate to your cargo.toml and add `use::wasm_set_stack_pointer;` somewhere in your code.
+Add this crate to your cargo.toml and add `use wasm_set_stack_pointer;` somewhere in your code.
 
-**IMPORTANT**: If you don't add `use::wasm_set_stack_pointer;` the linker will strip away the `set_stack_pointer` function.
+**IMPORTANT**: If you don't add `use wasm_set_stack_pointer;` the linker will strip away the `set_stack_pointer` function.
 
 ## Building
 This library already has the WebAssembly generated so probably you don't need to do it yourself.

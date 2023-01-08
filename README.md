@@ -1,4 +1,4 @@
-
+***IMPORTANT: This crate appears to not work as of January 8th 2022. I'm not sure what's changed. Look here for an alternative: [https://github.com/WebAssembly/binaryen/issues/2934](https://github.com/WebAssembly/binaryen/issues/2934)***
 ## Wasm Set Stack Pointer 
 This crate serves a very specific purpose. 
 
